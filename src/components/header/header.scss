@@ -1,0 +1,14 @@
+@use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+
+.header {
+    background-color: red;
+
+    &__logo {
+        width: 20px;
+    }
+
+
+
+
+}
