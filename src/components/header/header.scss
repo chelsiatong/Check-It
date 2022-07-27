@@ -11,10 +11,10 @@ a {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid variables.$Main-Blue;
     margin: 1rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 2.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
     
     @include mixins.tablet {
@@ -25,6 +25,7 @@ a {
     @include mixins.desktop {
         padding: 0 2.5rem 0.5rem;
     }
+
 
     &__logo {
         margin-top: 0.8rem;
@@ -45,7 +46,7 @@ a {
             padding: 0.5rem;
             font-size: 0.8rem;
             background-color: transparent;
-            border-radius: 1rem;
+            border-radius: 10px;
 
             @include mixins.tablet {
                 font-size: 1rem;

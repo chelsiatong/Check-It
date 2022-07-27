@@ -9,15 +9,17 @@ button {
 
 .home {
     background-color: variables.$Main-Blue;
-    // display: flex;
+    opacity: 85%;
     justify-content: space-evenly;
     border-radius: 20px;
     padding: 3rem 2rem;
-    margin: 1.5rem 1rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.75) 1.95px 2.95px 2.6px;
+    margin: 1.5rem 1rem 1rem;  
+    border: 3px solid variables.$Dark-Blue;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     @include mixins.tablet {
         display: block;
+        margin: 1.5rem 2rem;
     }
 
     @include mixins.desktop {
@@ -27,15 +29,16 @@ button {
     
 
     &__logo {
-        max-width: 50%;
+        max-width: 40%;
         border-radius: 50%;
         display: block;
         margin: auto;
+        border-top: 6px solid variables.$White;
+        border-left: 6px solid variables.$White;
 
         @include mixins.tablet {
-            max-width: 20%;
-            padding-bottom: 3rem;
-
+            max-width: 30%;
+            margin-bottom: 3rem;
         }
     }
 
