@@ -6,8 +6,8 @@ function Notes() {
     return (
         <section className="notes" >
             <div>
-                {/* <SideNotes /> */}
-                {/* <MainNotes/> */}
+                <SideNotes />
+                <MainNotes />
             </div>
 
         </section>
