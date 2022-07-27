@@ -1,10 +1,16 @@
 import './notes.scss';
+import SideNotes from '../sidenotes/sidenotes';
+import MainNotes from '../mainnotes/mainnotes';
 
 function Notes() {
     return (
-        <div>
-            <h1>notes</h1>
-        </div>
+        <section className="notes" >
+            <div>
+                {/* <SideNotes /> */}
+                {/* <MainNotes/> */}
+            </div>
+
+        </section>
     )
 }
 
