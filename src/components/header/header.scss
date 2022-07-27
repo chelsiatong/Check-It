@@ -14,6 +14,8 @@ a {
     border-radius: 20px;
     border: 2px solid variables.$Main-Blue;
     margin: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 2.95px 2.6px;
+
     
     @include mixins.tablet {
         padding: 0 1.5rem 0.5rem;
