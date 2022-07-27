@@ -8,11 +8,11 @@ button {
 }
 
 .home {
-    display: flex;
+    background-color: variables.$Main-Blue;
+    // display: flex;
     justify-content: space-evenly;
-    border: 3px solid variables.$Light-Grey;
-    border-radius: 10%;
-    padding: 2rem 2rem 2.5rem 1rem;
+    border-radius: 20px;
+    padding: 3rem 2rem;
     margin: 1.5rem 1rem 1rem;
 
     @include mixins.tablet {
@@ -20,77 +20,70 @@ button {
     }
 
     @include mixins.desktop {
-    margin-bottom: 5rem;
+        margin-bottom: 5rem;
     
     }
     
 
     &__logo {
-        padding-right: 1rem;
-        width: 50px;
-        height: 80px;
+        max-width: 50%;
+        border-radius: 50%;
         display: block;
         margin: auto;
 
         @include mixins.tablet {
+            max-width: 20%;
             padding-bottom: 3rem;
 
         }
-
-        // @include mixins.desktop {
-        //     width: 20%;
-        // }
     }
 
     &__menu {
         @include mixins.tablet {
-            margin-top: 2rem;
             display: flex;
             justify-content: space-evenly;
         }
 
         @include mixins.desktop {
-            margin-top: 3rem;
+
         }
 
         &--option { 
             display: block;
             margin: auto;
-            width: 150px;
-            height: 150px;
-            background-color: variables.$Main-Blue;
+            min-width: 15rem;
+            min-height: 40px;
+            border-radius: 20px;
+            background-color: variables.$White;
             text-align: center;
-            border-radius: 30%;
-            opacity: 60%;
-            color: variables.$White;
-            font-size: 2rem;
+            color: variables.$Main-Blue;
+            font-size: 1.5rem;
             margin-top: 1rem;
-            padding-top: 0.5rem;
 
             @include mixins.tablet {
-                width: 300px;
-                height: 300px;
+                min-width: 20rem;
+                min-height: 40px;
                 margin: 0 0 2rem;
-                font-size: 4rem;
+                font-size: 2rem;
             }
 
             @include mixins.desktop {
-                width: 450px;
-                height: 450px;
-                font-size: 5.5rem;
+                min-width: 30rem;
+                min-height: 60px;
+                font-size: 2.5rem;
             }
 
             &:hover {
-                border: 5px solid variables.$Orange-Accent;
+                border: 2px solid variables.$Orange-Accent;
                 transform: scale(1.1);
                 font-weight: 600;
 
                 @include mixins.tablet {
-                    border: 9px solid variables.$Orange-Accent;
+                    border: 4px solid variables.$Orange-Accent;
                 }
 
                 @include mixins.desktop {
-                    border: 12px solid variables.$Orange-Accent;
+                    border: 5px solid variables.$Orange-Accent;
                 }
                 
             }

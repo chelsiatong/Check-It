@@ -1,7 +1,8 @@
 import './header.scss';
 import NavLogo from '../../assets/logo/nav-logo.png';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
+// import React, { useState } from 'react';
 
 function Header(props) {
     const { pathname } = useLocation();
