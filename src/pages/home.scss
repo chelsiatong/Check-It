@@ -14,6 +14,7 @@ button {
     border-radius: 20px;
     padding: 3rem 2rem;
     margin: 1.5rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.75) 1.95px 2.95px 2.6px;
 
     @include mixins.tablet {
         display: block;
@@ -56,13 +57,17 @@ button {
             border-radius: 20px;
             background-color: variables.$White;
             text-align: center;
-            color: variables.$Main-Blue;
-            font-size: 1.5rem;
-            margin-top: 1rem;
+            color: variables.$Dark-Blue;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            border: 3px solid variables.$Dark-Blue;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 600;
+            box-shadow: rgba(0, 0, 0, 0.55) 1.95px 2.95px 2.6px;
 
             @include mixins.tablet {
                 min-width: 20rem;
-                min-height: 40px;
+                min-height: 50px;
                 margin: 0 0 2rem;
                 font-size: 2rem;
             }
@@ -71,10 +76,11 @@ button {
                 min-width: 30rem;
                 min-height: 60px;
                 font-size: 2.5rem;
+
             }
 
             &:hover {
-                border: 2px solid variables.$Orange-Accent;
+                border: 3px solid variables.$Orange-Accent;
                 transform: scale(1.1);
                 font-weight: 600;
 
