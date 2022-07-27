@@ -8,47 +8,68 @@ button {
 }
 
 .home {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid variables.$Light-Grey;
+    border-radius: 10%;
+    padding: 2rem 2rem 2.5rem 1rem;
+    margin: 1.5rem 1rem 1rem;
+
+    @include mixins.tablet {
+        display: block;
+    }
 
     @include mixins.desktop {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    
     }
     
 
     &__logo {
-        padding-bottom: 1rem;
-        width: 20%;
+        padding-right: 1rem;
+        width: 50px;
+        height: 80px;
         display: block;
         margin: auto;
 
         @include mixins.tablet {
             padding-bottom: 3rem;
+
         }
+
+        // @include mixins.desktop {
+        //     width: 20%;
+        // }
     }
 
     &__menu {
         @include mixins.tablet {
+            margin-top: 2rem;
             display: flex;
             justify-content: space-evenly;
+        }
+
+        @include mixins.desktop {
+            margin-top: 3rem;
         }
 
         &--option { 
             display: block;
             margin: auto;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             background-color: variables.$Main-Blue;
             text-align: center;
             border-radius: 30%;
             opacity: 60%;
             color: variables.$White;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-top: 1rem;
             padding-top: 0.5rem;
 
             @include mixins.tablet {
-                width: 350px;
-                height: 350px;
+                width: 300px;
+                height: 300px;
                 margin: 0 0 2rem;
                 font-size: 4rem;
             }
