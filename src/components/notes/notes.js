@@ -1,14 +1,22 @@
 import './notes.scss';
+import SideNotes from '../sidenotes/sidenotes';
+import MainNotes from '../mainnotes/mainnotes';
+import React from 'react';
 
-function Notes() {
-    return (
-        <div>
-            <h1>notes</h1>
-            <p>adfadfasdfasdfasadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfdfadf</p>
-            <p>adfadfasdfasdfasadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfadfadfasdfasdfasdfadfdfadf</p>
+class Notes extends React.Component {
+    render() {
 
-        </div>
-    )
+        return (
+            <section className="notes" >
+                <div>
+                    <SideNotes />
+                    <MainNotes />
+                </div>
+
+            </section>
+        );
+    }
+
 }
 
 export default Notes;

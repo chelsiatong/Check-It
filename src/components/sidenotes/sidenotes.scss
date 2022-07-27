@@ -1,0 +1,19 @@
+@use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/variables';
+
+.side-notes {
+
+    &__header {
+        display: flex;
+
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    // &__delete {
+
+    // }
+}

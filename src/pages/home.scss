@@ -8,89 +8,91 @@ button {
 }
 
 .home {
-    display: flex;
+    background-color: variables.$Main-Blue;
+    opacity: 85%;
     justify-content: space-evenly;
-    border: 3px solid variables.$Light-Grey;
-    border-radius: 10%;
-    padding: 2rem 2rem 2.5rem 1rem;
-    margin: 1.5rem 1rem 1rem;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin: 1.5rem 1rem 1rem;  
+    border: 3px solid variables.$Dark-Blue;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     @include mixins.tablet {
         display: block;
+        margin: 1.5rem 2rem;
     }
 
     @include mixins.desktop {
-    margin-bottom: 5rem;
+        margin-bottom: 5rem;
     
     }
     
 
     &__logo {
-        padding-right: 1rem;
-        width: 50px;
-        height: 80px;
+        max-width: 40%;
+        border-radius: 50%;
         display: block;
         margin: auto;
+        border-top: 6px solid variables.$White;
+        border-left: 6px solid variables.$White;
 
         @include mixins.tablet {
-            padding-bottom: 3rem;
-
+            max-width: 30%;
+            margin-bottom: 3rem;
         }
-
-        // @include mixins.desktop {
-        //     width: 20%;
-        // }
     }
 
     &__menu {
         @include mixins.tablet {
-            margin-top: 2rem;
             display: flex;
             justify-content: space-evenly;
         }
 
         @include mixins.desktop {
-            margin-top: 3rem;
+
         }
 
         &--option { 
             display: block;
             margin: auto;
-            width: 150px;
-            height: 150px;
-            background-color: variables.$Main-Blue;
+            min-width: 15rem;
+            min-height: 40px;
+            border-radius: 20px;
+            background-color: variables.$White;
             text-align: center;
-            border-radius: 30%;
-            opacity: 60%;
-            color: variables.$White;
-            font-size: 2rem;
-            margin-top: 1rem;
-            padding-top: 0.5rem;
+            color: variables.$Dark-Blue;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            border: 3px solid variables.$Dark-Blue;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 600;
+            box-shadow: rgba(0, 0, 0, 0.55) 1.95px 2.95px 2.6px;
 
             @include mixins.tablet {
-                width: 300px;
-                height: 300px;
+                min-width: 20rem;
+                min-height: 50px;
                 margin: 0 0 2rem;
-                font-size: 4rem;
+                font-size: 2rem;
             }
 
             @include mixins.desktop {
-                width: 450px;
-                height: 450px;
-                font-size: 5.5rem;
+                min-width: 30rem;
+                min-height: 60px;
+                font-size: 2.5rem;
+
             }
 
             &:hover {
-                border: 5px solid variables.$Orange-Accent;
+                border: 3px solid variables.$Orange-Accent;
                 transform: scale(1.1);
                 font-weight: 600;
 
                 @include mixins.tablet {
-                    border: 9px solid variables.$Orange-Accent;
+                    border: 4px solid variables.$Orange-Accent;
                 }
 
                 @include mixins.desktop {
-                    border: 12px solid variables.$Orange-Accent;
+                    border: 5px solid variables.$Orange-Accent;
                 }
                 
             }
