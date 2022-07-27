@@ -1,13 +1,16 @@
-// import './home.scss';
+import './home.scss';
 
 
-// function Home() {
-//     return (
-//         <div>
-//             hello!
-//         </div>
+function Home() {
+    return (
+        <section>
+            <div>
+                <h1>home</h1>
+            </div>
+        </section>
 
-//     );
-// }
 
-// export default Home;
+    );
+}
+
+export default Home;
