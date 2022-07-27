@@ -1,11 +1,11 @@
+import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
 import './header.scss';
 import NavLogo from '../../assets/logo/nav-logo.png';
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import React from 'react';
+
 // import React, { useState } from 'react';
 
 function Header(props) {
-    const { pathname } = useLocation();
     // const [setClick] = useState(false)
     // const closeMenu = () => setClick(false)
 
@@ -16,11 +16,11 @@ function Header(props) {
             <div className="header__nav" >
                 {/* <Link to="notes" className="header__logo--link" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} >Notes</Link> */}
                 <NavLink to="/notes"
-                    className="header__logo--link" activeClassName="header__logo--active" isActive={() => ["/notes"].includes(pathname)}>Notes</NavLink>
+                    className="header__logo--link" activeClassName="header__logo--active" >Notes</NavLink>
                 <NavLink to="/calendar"
-                    className="header__logo--link" activeClassName="header__logo--active" isActive={() => ["/calendar"].includes(pathname)}>Calendar</NavLink>
+                    className="header__logo--link" activeClassName="header__logo--active" >Calendar</NavLink>
                 <NavLink to="/about"
-                    className="header__logo--link" activeClassName="header__logo--active" isActive={() => ["/about"].includes(pathname)} >About</NavLink>
+                    className="header__logo--link" activeClassName="header__logo--active" >About</NavLink>
             </div>
         </header>
     )
