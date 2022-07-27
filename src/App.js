@@ -1,10 +1,11 @@
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/header/header';
 import Home from './pages/home';
 import Notes from './components/notes/notes';
 import Calendar from './components/calendar/calendar';
 import About from './components/about/about';
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
