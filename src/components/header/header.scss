@@ -53,13 +53,15 @@ a {
                 background-color: variables.$Main-Blue;
                 color: variables.$White;
                 padding: 0.5rem;
+                
             }
         }
         
         &--active {
-            background-color: variables.$Orange-Accent;
+            background-color: transparent;
             border-radius: 1rem;
             padding: 0.5rem;
+            color: variables.$Orange-Accent;
 
         }
 

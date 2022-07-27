@@ -1,0 +1,78 @@
+@use '../styles/partials/global';
+@use '../styles/partials/mixins';
+@use '../styles/partials/variables';
+
+
+button {
+    border: none;
+}
+
+.home {
+    margin-top: 1rem;
+
+    @include mixins.desktop {
+    margin-bottom: 2rem;
+    }
+    
+
+    &__logo {
+        padding-bottom: 1rem;
+        width: 20%;
+        display: block;
+        margin: auto;
+
+        @include mixins.tablet {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__menu {
+        @include mixins.tablet {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &--option { 
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: variables.$Main-Blue;
+            text-align: center;
+            border-radius: 30%;
+            opacity: 60%;
+            color: variables.$White;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+
+            @include mixins.tablet {
+                width: 350px;
+                height: 350px;
+                margin: 0 0 2rem;
+                font-size: 4rem;
+            }
+
+            @include mixins.desktop {
+                width: 450px;
+                height: 450px;
+                font-size: 5.5rem;
+            }
+
+            &:hover {
+                border: 5px solid variables.$Orange-Accent;
+                transform: scale(1.1);
+                font-weight: 600;
+
+                @include mixins.tablet {
+                    border: 9px solid variables.$Orange-Accent;
+                }
+
+                @include mixins.desktop {
+                    border: 12px solid variables.$Orange-Accent;
+                }
+                
+            }
+        }
+    }
+}
