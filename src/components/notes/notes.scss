@@ -9,4 +9,17 @@
     border-radius: 20px;
     margin: 2rem 2rem 1rem;
 
+    &__container {
+        @include mixins.tablet {
+            display: flex;
+            justify-content: start;
+        }
+    }
+
+    &__main {
+        @include mixins.tablet {
+            width: 100%;
+        }
+    }
+
 }
