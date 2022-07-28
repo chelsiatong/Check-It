@@ -16,7 +16,7 @@ function MainNotes({ activeNote, onUpdateNote }) {
     return (
         <section className="main-notes">
             <div className="main-notes--edit" >
-                <input className="main-notes--edit__title" type="text" id="title" placeholder="What do you want to name me?" value={activeNote.title} onChange={(event) => onEditField("title", event.target.value)} autoFocus />
+                <input className="main-notes--edit__title" type="text" id="title" placeholder="Name me!" value={activeNote.title} onChange={(event) => onEditField("title", event.target.value)} autoFocus />
                 <textarea className="main-notes--edit__body" id="body" placeholder="What's on your mind?" value={activeNote.body} onChange={(event) => onEditField("body", event.target.value)} />
             </div>
             <div className="main-notes__preview" >
