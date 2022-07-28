@@ -5,7 +5,21 @@
 .notes {
     border: 5px solid variables.$Orange-Accent;
     opacity: 70%;
+    height: 100%;
     border-radius: 20px;
     margin: 2rem 2rem 1rem;
+
+    &__container {
+        @include mixins.tablet {
+            display: flex;
+            justify-content: start;
+        }
+    }
+
+    &__main {
+        @include mixins.tablet {
+            width: 100%;
+        }
+    }
 
 }

@@ -3,17 +3,79 @@
 @use '../../styles/partials/variables';
 
 .side-notes {
+    margin: 1rem;
 
     &__header {
         display: flex;
+        border-bottom: 1px solid variables.$Main-Blue;
 
+        @include mixins.tablet {
+            border: none;
+        }
+    }
+
+    &__add {
+        color: variables.$White;
+        font-weight: 600;
+        background-color: variables.$Main-Blue;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        margin: 1.1rem 0.5rem 0.6rem;
+       
+    }
+
+    &__notes {
+        border-left: 1px solid variables.$Main-Blue;
+        padding-right: 0.5rem;
+        margin-top: 0.5rem;
+
+        @include mixins.tablet {
+            border: none;
+            width: 250px;
+            
+        }
+    }
+
+    &__note {
+        margin-left: 1rem;
+        padding:  0.1rem 0.3rem;
+        color: variables.$Dark-Blue;
+
+        @include mixins.tablet {
+            border-bottom: 1px solid variables.$Main-Blue;
+            margin: 0.5rem 1rem;
+        }
+
+        &--active {
+            color: variables.$Dark-Orange;
+        }
+        
     }
 
     &__title {
         display: flex;
+        justify-content: space-between;
+        
     }
 
-    // &__delete {
+    &__label {
+        margin: 0;
+    }
 
-    // }
+    &__delete {
+        font-weight: 600;
+        color: variables.$Delete;
+        background-color: transparent;
+        margin-bottom: 0.1rem;
+    }
+
+    &__time {
+        margin: 0;
+        font-size: 0.6rem;
+    }
+
+    &__preview {
+        margin: 0;
+    }
 }
