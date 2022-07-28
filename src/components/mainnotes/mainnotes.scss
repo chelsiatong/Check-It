@@ -37,7 +37,7 @@ input, textarea {
         }
 
         &__body {
-            min-height: 200px;
+            min-height: 300px;
             font-size: 1rem;
             border-radius: 20px;
             color: variables.$Dark-Blue;
@@ -75,18 +75,19 @@ input, textarea {
             padding: 0 0.8rem;
             margin-top: 1rem;
             border: 2px solid variables.$Light-Grey;
-            min-height: 200px;
+            min-height: 300px;
         }
     }
 }
 
 .not-selected {
-    height: 200px;
+    height: 300px;
     padding: 0.8rem 1.5rem;
     margin: 1.2rem 1rem;
     font-weight: 600;
     border: 2px solid variables.$Light-Grey;
     border-radius: 20px;
+    color: variables.$Grey;
    
 
     @include mixins.tablet {
