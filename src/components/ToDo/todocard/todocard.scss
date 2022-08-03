@@ -3,6 +3,18 @@
 @use '../../../styles/partials/variables';
 
 .card {
-    background-color: red;
+    
+
+    &__container {
+        margin: 1rem;
+        width: 40%;
+        height: 10rem;
+        background-color: yellow;
+        border: 2px solid blue;
+    }
+
+    &__button {
+        cursor: pointer;
+    }
 
 }
