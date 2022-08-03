@@ -1,0 +1,11 @@
+@use '../../../../styles/partials/global';
+@use '../../../../styles/partials/variables';
+@use '../../../../styles/partials/mixins';
+
+.modal {
+    background-color: pink;
+
+    &__header {
+        color: green;
+    }
+}

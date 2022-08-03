@@ -1,7 +1,8 @@
 import './todolist.scss';
 import React, { useState, useEffect } from 'react';
 import ToDoCard from '../todocard/todocard';
-import CreateTask from '../todomodals/createtask';
+import CreateTaskModal from '../todomodals/createtask/createtask';
+
 
 function ToDoList() {
     const [modal, setModal] = useState(false);
@@ -23,7 +24,7 @@ function ToDoList() {
         window.location.reload();
     }
 
-    const updateList = (object, index) => {
+    const updateListArr = (object, index) => {
         let temporary = tasks;
         temporary[index] = object;
         localStorage.setItem("tasks", JSON.stringify(temporary));
@@ -47,12 +48,12 @@ function ToDoList() {
         <section className="todo">
             <div className="todo__header" >
                 <h1 className="todo__title" >ToDo</h1>
-                <button className="todo__add" onClick={() => setModal(true)}>add todo</button>
+                <button className="todo__add" onClick={() => setModal(true)}>+ add</button>
             </div>
-            <div className="todo__container" >
-                {tasks && tasks.map((object, index) => <ToDoCard taskObj={object} index={index} deleteTask={deleteTask} updateList={updateList} />)}
+            <div className="todo__container">
+                {tasks && tasks.map((object, index) => <ToDoCard taskObj={object} index={index} deleteTask={deleteTask} updateListArr={updateListArr} />)}
             </div>
-            <CreateTask toggle={toggle} modal={modal} save={saveTask} />
+            <CreateTaskModal toggle={toggle} modal={modal} save={saveTask} />
         </section>
     );
 }

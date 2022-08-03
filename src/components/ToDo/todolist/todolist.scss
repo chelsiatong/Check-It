@@ -2,3 +2,37 @@
 @use '../../../styles/partials/variables';
 @use '../../../styles/partials/mixins';
 
+.todo {
+    text-align: center;
+
+    &__header {
+       padding: 1rem;
+       border: 5px solid variables.$Main_Blue;
+       border-radius: 10px;
+       margin: 2rem 1rem;
+       display: flex;
+       justify-content: center;
+ 
+    }
+
+    &__title {
+        color: variables.$Main_Blue;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    &__add {
+        margin: 1rem;
+        margin-left: 0;
+        border-radius: 10px;
+        border: 2px solid variables.$Orange_Accent;
+        background-color: transparent;
+        color: variables.$Orange_Accent;
+        font-weight: 600;
+
+    }
+
+    &__container {
+        background-color: aquamarine;
+    }
+}
