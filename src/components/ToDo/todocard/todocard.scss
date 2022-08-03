@@ -8,20 +8,64 @@
     background-color: variables.$White;
     border: 3px solid variables.$Orange-Accent;
     border-radius: 10px;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @include mixins.tablet {
         width: 40%;
     }
 
     @include mixins.desktop {
-        width: 30%;
+        width: 20%;
     }
-       
+
+    &__head {
+        border-bottom: 2px solid variables.$Orange-Accent;
+        padding: 0 1rem 0.8rem;
+        color: variables.$Dark-Orange;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    &__description {
+        padding: 1rem 2rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        min-height: 5rem;
+        font-size: 1rem;
+        color: variables.$Dark-Orange;
+        font-weight: 600;
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     &__button {
         cursor: pointer;
+        padding: 0.5rem;
+        width: 5rem;
+        background-color: rgba($color: variables.$Orange-Accent, $alpha: 0.9);
+        color: variables.$White;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 10px;
+
+        @include mixins.tablet {
+            width: 7rem;
+        }
+
+        @include mixins.desktop {
+            padding: 0.5rem 1.8rem;
+        }
+
+        &:hover {
+            box-shadow: rgba(182, 82, 6, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+        }
     }
 
 }
