@@ -19,7 +19,7 @@ function ToDoCard({ taskObj, index, deleteTask, updateListArr }) {
 
     return (
         <>
-            <div className="card__container">
+            <div className="card">
                 <span className="card__head">{taskObj.Name}</span>
                 <p className="card__description">{taskObj.Description}</p>
                 <div>
