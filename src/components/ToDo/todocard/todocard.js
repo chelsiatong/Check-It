@@ -19,7 +19,6 @@ function ToDoCard({ taskObj, index, deleteTask, updateListArr }) {
 
     return (
         <section className="card">
-            <div className="card__top" ></div>
             <div className="card__container">
                 <span className="card__head">{taskObj.Name}</span>
                 <p className="card__description">{taskObj.Description}</p>

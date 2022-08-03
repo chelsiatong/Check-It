@@ -40,8 +40,8 @@ function CreateTaskModal({ modal, toggle, save }) {
                 </div>
             </ModalBody>
             <ModalFooter>
-                <Button className="modal__cancel" onClick={toggle} >cancel</Button>
-                <Button className="modal__create" onClick={handleSave} >create</Button>
+                <Button className="modal__cancel" onClick={toggle} >Cancel</Button>
+                <Button className="modal__create" onClick={handleSave} >Create</Button>
             </ModalFooter>
         </Modal>
     );
