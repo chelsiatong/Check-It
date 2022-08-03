@@ -39,7 +39,7 @@ function ToDoList() {
     const saveTask = (taskObj) => {
         let temporary = tasks;
         temporary.push(taskObj);
-        localStorage.setItem("tasks".JSON.stringify(temporary));
+        localStorage.setItem("tasks", JSON.stringify(temporary));
         setTasks(tasks);
         setModal(false);
     }
@@ -53,7 +53,7 @@ function ToDoList() {
             <div className="todo__container">
                 {tasks && tasks.map((object, index) => <ToDoCard taskObj={object} index={index} deleteTask={deleteTask} updateListArr={updateListArr} />)}
             </div>
-            <CreateTaskModal toggle={toggle} modal={modal} save={saveTask} />
+            {modal !== false && <CreateTaskModal toggle={toggle} save={saveTask} />}
         </section>
     );
 }
