@@ -20,9 +20,9 @@ function ToDoCard({ taskObj, index, deleteTask, updateListArr }) {
     return (
         <>
             <div className="card">
-                <span className="card__head">{taskObj.Name}</span>
-                <p className="card__description">{taskObj.Description}</p>
-                <div>
+                <span className="card__head">{taskObj.Name && taskObj.Name.substr(0, 20) + "..."}</span>
+                <p className="card__description">{taskObj.Description && taskObj.Description.substr(0, 80) + "..."}</p>
+                <div className="card__buttons" >
                     <button className="card__button" onClick={() => setModal(true)}>Edit</button>
                     <button className="card__button" onClick={handleDelete} >Delete</button>
                 </div>
