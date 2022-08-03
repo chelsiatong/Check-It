@@ -26,8 +26,8 @@ function CreateTaskModal({ modal, toggle, save }) {
 
     return (
         <section className="modal">
-            <div className="modal__section" isOpen={modal} toggle={toggle}>
-                <div className="modal__header" toggle={toggle}>Create Task</div>
+            <div className="modal__section">
+                <div className="modal__header">Create Task</div>
                 <div>
                     <div className="modal__container">
                         <div className="modal__head" >
@@ -41,7 +41,7 @@ function CreateTaskModal({ modal, toggle, save }) {
                     </div>
                 </div>
                 <div className="modal__buttons" >
-                    <button className="modal__buttons--click" onClick={toggle} >Cancel</button>
+                    <button className="modal__buttons--click" onClick={toggle}>Cancel</button>
                     <button className="modal__buttons--click" onClick={handleSave} >Create</button>
                 </div>
             </div>

@@ -27,7 +27,7 @@ function ToDoCard({ taskObj, index, deleteTask, updateListArr }) {
                     <button className="card__button" onClick={handleDelete} >Delete</button>
                 </div>
             </div>
-            <EditTask modal={modal} toggle={toggle} updateTask={updateTask} taskObj={taskObj} />
+            {modal && <EditTask toggle={toggle} updateTask={updateTask} taskObj={taskObj} />}
         </>
     )
 }
