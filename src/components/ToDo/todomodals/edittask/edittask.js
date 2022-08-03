@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
@@ -17,10 +17,10 @@ function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
 
     const handleUpdate = (event) => {
         event.preventDefault();
-        let taskObj = {};
-        taskObj["Name"] = taskName;
-        taskObj["Description"] = description;
-        updateTask(taskObj);
+        let tempObj = {};
+        tempObj["Name"] = taskName;
+        tempObj["Description"] = description;
+        updateTask(tempObj);
     }
 
     useEffect(() => {
