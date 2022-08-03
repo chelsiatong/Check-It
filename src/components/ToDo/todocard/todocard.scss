@@ -3,14 +3,17 @@
 @use '../../../styles/partials/variables';
 
 .card {
-    
+    display: flex;
+    flex-direction: row;
 
     &__container {
         margin: 1rem;
-        width: 40%;
-        height: 10rem;
-        background-color: yellow;
-        border: 2px solid blue;
+        width: 50%;
+        min-height: 10rem;
+        background-color: variables.$White;
+        border: 3px solid variables.$Orange-Accent;
+        border-radius: 10px;
+       
     }
 
     &__button {

@@ -4,32 +4,44 @@
 
 .todo {
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgba(45, 140, 240, 0.4);
+    padding-top: 2rem;
+    margin: 1.5rem 1rem;
+    border: 4px solid variables.$Dark_Blue;
+    border-radius: 10px;
+    
 
     &__header {
-       padding: 1rem;
-       border: 5px solid variables.$Main_Blue;
-       border-radius: 10px;
-       margin: 2rem 1rem;
-       display: flex;
-       justify-content: center;
+        background-color: variables.$White;
+        padding: 1rem;
+        border: 4px solid variables.$Dark_Blue;
+        border-radius: 10px;
+        margin: 0 2rem 1rem;
+        display: flex;
+        justify-content: center;
  
     }
 
     &__title {
-        color: variables.$Main_Blue;
+        color: variables.$Dark_Blue;
         margin: 1rem;
         font-size: 2rem;
+
     }
 
     &__add {
         margin: 1rem;
         margin-left: 0;
         border-radius: 10px;
-        border: 2px solid variables.$Orange_Accent;
+        border: 2px solid variables.$Dark_Blue;
         background-color: transparent;
-        color: variables.$Orange_Accent;
+        color: variables.$Dark_Blue;
         font-weight: 600;
+
+        &:hover {
+            color: variables.$Orange-Accent;
+            border-color: variables.$Orange-Accent;
+        }
 
     }
 
