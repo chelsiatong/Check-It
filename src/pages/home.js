@@ -4,7 +4,7 @@ import MainLogo from '../assets/logo/main-logo.png';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-export const API_URL = 'https://api.unsplash.com/search/photos?orientation=landscape&color=blue&query=mountain&client_id=kqtyznMCRXQzQtY-fkSugNKhER2HYZKdb7gZunsdV8U'
+export const API_URL = 'https://api.unsplash.com/search/photos?orientation=landscape&color=white&query=rock&client_id=kqtyznMCRXQzQtY-fkSugNKhER2HYZKdb7gZunsdV8U'
 
 function Home() {
     const [images, setImages] = useState("");
@@ -13,7 +13,7 @@ function Home() {
         axios.get(`${API_URL}`)
             .then((response) => {
                 console.log(response.data.results);
-                const randomIndex = Math.floor(Math.random() * 9);
+                const randomIndex = Math.floor(Math.random() * response.data.results.length);
                 const data = response.data.results[randomIndex].urls.full;
                 setImages(data);
             })

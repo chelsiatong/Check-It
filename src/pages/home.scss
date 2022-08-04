@@ -9,6 +9,7 @@ button {
 
 .home {
     background-color:rgba($color: variables.$Main-Blue, $alpha: 0.25);
+    opacity: 75%;
     background-position: center;
     background-size: cover;
     justify-content: space-evenly;
