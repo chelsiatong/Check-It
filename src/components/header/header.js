@@ -3,7 +3,6 @@ import React from 'react';
 import './header.scss';
 import NavLogo from '../../assets/logo/nav-logo.png';
 
-// import React, { useState } from 'react';
 
 function Header(props) {
     // const [setClick] = useState(false)

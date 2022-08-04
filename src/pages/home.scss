@@ -8,28 +8,31 @@ button {
 }
 
 .home {
-    background-color: variables.$Main-Blue;
-    opacity: 85%;
+    background-color:rgba($color: variables.$Main-Blue, $alpha: 0.25);
+    background-position: center;
+    background-size: cover;
     justify-content: space-evenly;
     border-radius: 20px;
     padding: 3rem 2rem;
     margin: 1.5rem 1rem 1rem;  
     border: 3px solid variables.$Dark-Blue;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    min-height: 28rem;
 
     @include mixins.tablet {
         display: block;
         margin: 1.5rem 2rem;
+        min-height: 25rem;
     }
 
     @include mixins.desktop {
         margin-bottom: 5rem;
-    
+        min-height: 50rem;
     }
     
 
     &__logo {
-        max-width: 40%;
+        max-width: 55%;
         border-radius: 50%;
         display: block;
         margin: auto;
@@ -37,25 +40,28 @@ button {
         border-left: 6px solid variables.$White;
 
         @include mixins.tablet {
-            max-width: 30%;
-            margin-bottom: 3rem;
+            min-width: 48%;
+            margin-bottom: 3.5rem;
+        }
+
+        @include mixins.desktop {
+            min-width: 55%;
+            margin-bottom: 5rem;
         }
     }
 
     &__menu {
+        padding-top: 2rem;
+
         @include mixins.tablet {
             display: flex;
             justify-content: space-evenly;
         }
 
-        @include mixins.desktop {
-
-        }
-
         &--option { 
             display: block;
             margin: auto;
-            min-width: 15rem;
+            min-width: 13rem;
             min-height: 40px;
             border-radius: 20px;
             background-color: variables.$White;
@@ -96,6 +102,21 @@ button {
                 }
                 
             }
+        }
+    }
+
+    &__images {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__custom {
+        background: none;
+        display: block;
+        margin: auto;
+
+        @include mixins.tablet {
+            margin-bottom: 2rem;
         }
     }
 }
