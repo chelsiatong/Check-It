@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;    
+    
     @include mixins.tablet {
         width: 40%;
     }
@@ -49,8 +50,9 @@
         cursor: pointer;
         padding: 0.5rem;
         width: 5rem;
-        background-color: rgba($color: variables.$Orange-Accent, $alpha: 0.9);
-        color: variables.$White;
+        background-color: variables.$White;
+        border: 2px solid variables.$Orange-Accent;
+        color: variables.$Orange-Accent;
         font-weight: 600;
         font-size: 1rem;
         border-radius: 10px;
@@ -64,8 +66,7 @@
         }
 
         &:hover {
-            box-shadow: rgba(182, 82, 6, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
         }
-    }
-
+    }    
 }
