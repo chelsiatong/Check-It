@@ -1,0 +1,66 @@
+@use '../../../styles/partials/global';
+@use '../../../styles/partials/variables';
+@use '../../../styles/partials/mixins';
+
+.todo {
+    text-align: center;
+    background-color: rgba(45, 140, 240, 0.1);
+    padding: 2rem 0;
+    border: 4px solid variables.$Dark_Blue;
+    border-radius: 10px;
+    min-height: calc(100vh - 20rem);
+    margin: 2rem 1rem;    
+
+    @include mixins.tablet {
+        margin: 2rem;
+    }
+
+    &__header {
+        background-color: variables.$White;
+        padding: 1rem;
+        border: 4px solid variables.$Dark_Blue;
+        border-radius: 10px;
+        margin: 0 2.5rem 1rem;
+        display: flex;
+        justify-content: center;
+
+        @include mixins.tablet {
+            margin: 0 3rem 1rem;
+        }
+
+        @include mixins.desktop {
+            margin: 0 2rem 1rem;
+        }
+ 
+    }
+
+    &__title {
+        color: variables.$Dark_Blue;
+        margin: 1rem;
+        font-size: 2rem;
+
+    }
+
+    &__add {
+        margin: 1rem;
+        border-radius: 10px;
+        border: 2px solid variables.$Dark_Blue;
+        background-color: transparent;
+        color: variables.$Dark_Blue;
+        font-weight: 600;
+
+        &:hover {
+            color: variables.$Orange-Accent;
+            border-color: variables.$Orange-Accent;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+}

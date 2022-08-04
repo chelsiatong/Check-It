@@ -17,8 +17,8 @@ function Header(props) {
                 {/* <Link to="notes" className="header__logo--link" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} >Notes</Link> */}
                 <NavLink to="/notes"
                     className="header__logo--link" activeClassName="header__logo--active" >Notes</NavLink>
-                <NavLink to="/calendar"
-                    className="header__logo--link" activeClassName="header__logo--active" >Calendar</NavLink>
+                <NavLink to="/todo"
+                    className="header__logo--link" activeClassName="header__logo--active" >ToDo</NavLink>
                 <NavLink to="/about"
                     className="header__logo--link" activeClassName="header__logo--active" >About</NavLink>
             </div>

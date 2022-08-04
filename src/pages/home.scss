@@ -69,7 +69,7 @@ button {
             box-shadow: rgba(0, 0, 0, 0.55) 1.95px 2.95px 2.6px;
 
             @include mixins.tablet {
-                min-width: 20rem;
+                min-width: 18rem;
                 min-height: 50px;
                 margin: 0 0 2rem;
                 font-size: 2rem;

@@ -1,0 +1,72 @@
+@use '../../../styles/partials/global';
+@use '../../../styles/partials/mixins';
+@use '../../../styles/partials/variables';
+
+.card {
+    width: 70%;
+    min-height: 13rem;
+    background-color: variables.$White;
+    border: 3px solid variables.$Orange-Accent;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;    
+    
+    @include mixins.tablet {
+        width: 40%;
+    }
+
+    @include mixins.desktop {
+        width: 20%;
+    }
+
+    &__head {
+        border-bottom: 2px solid variables.$Orange-Accent;
+        padding: 0 1rem 0.8rem;
+        color: variables.$Dark-Orange;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    &__description {
+        padding: 1rem 2rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        min-height: 5rem;
+        font-size: 1rem;
+        color: variables.$Dark-Orange;
+        font-weight: 600;
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 5rem;
+        background-color: variables.$White;
+        border: 2px solid variables.$Orange-Accent;
+        color: variables.$Orange-Accent;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 10px;
+
+        @include mixins.tablet {
+            width: 7rem;
+        }
+
+        @include mixins.desktop {
+            padding: 0.5rem 1.8rem;
+        }
+
+        &:hover {
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+    }    
+}

@@ -13,8 +13,8 @@ class Home extends React.Component {
                     <div className="home__menu" >
                         <Link to="/notes">
                             <button className="home__menu--option">Notes</button></Link>
-                        <Link to="/calendar">
-                            <button className="home__menu--option">Calendar</button></Link>
+                        <Link to="/todo">
+                            <button className="home__menu--option">ToDo</button></Link>
                     </div>
                 </div>
                 <div>
