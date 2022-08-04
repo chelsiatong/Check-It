@@ -1,0 +1,106 @@
+@use '../../../styles/partials/global';
+@use '../../../styles/partials/mixins';
+@use '../../../styles/partials/variables';
+
+input, textarea {
+    border:none;
+    resize: none;
+    outline: none;
+
+    &::placeholder {
+        color: variables.$Dark-Blue;
+    }
+
+}
+
+.main-notes {
+    margin: 0 1rem;
+
+    &--edit {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+
+        @include mixins.tablet {
+            margin-top: 1.5rem;
+        }
+
+        &__title {
+            padding: 0.2rem 0.6rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            color: variables.$Dark-Blue;
+            border: 2px solid variables.$Dark-Blue;
+            font-family:'Courier New', Courier, monospace;
+
+        }
+
+        &__body {
+            min-height: 18.75rem;
+            font-size: 1rem;
+            border-radius: 20px;
+            color: variables.$Dark-Blue;
+            padding: 0.8rem;
+            border: 2px solid variables.$Dark-Blue;
+            margin-top: 1rem;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+    }
+
+    &__preview {
+        background-color: variables.$White;
+        border-radius: 20px;
+        min-height: 12.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        &--title {
+            height: 1.875rem;
+            margin: 0;
+            border-radius: 15px;
+            color: variables.$Light-Grey;
+            width: 100%;
+            padding: 0.2rem 1rem;
+            border: 2px solid variables.$Light-Grey;
+        }
+
+        &--body {
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 20px;
+            color: variables.$Light-Grey;
+            width: 100%;
+            padding: 0 0.8rem;
+            margin-top: 1rem;
+            border: 2px solid variables.$Light-Grey;
+            min-height: 18.75rem;
+
+            @include mixins.tablet{
+                margin-top: 0.8rem;
+            }
+        }
+    }
+}
+
+.not-selected {
+    min-height: 27rem;
+    padding: 0.8rem 1.5rem;
+    margin: 1.2rem 1rem;
+    font-weight: 600;
+    border: 2px solid variables.$Light-Grey;
+    border-radius: 20px;
+    color: variables.$Grey;
+   
+    @include mixins.tablet {
+        padding: 0.8rem 1rem;
+        margin: 2rem;
+        min-height: 44rem;
+    }
+
+    @include mixins.desktop {
+        min-height: 44.5rem;
+    }
+
+}
