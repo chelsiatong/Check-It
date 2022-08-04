@@ -20,7 +20,6 @@ function Home() {
             .catch((error) => {
                 console.log('Failed', error);
             });
-
     }
     return (
         <section>
@@ -37,8 +36,6 @@ function Home() {
             </div>
         </section>
     );
-
-
 }
 
 export default Home;
