@@ -47,7 +47,7 @@ function ToDoList() {
         <section className="todo">
             <div className="todo__header" >
                 <h1 className="todo__title" >ToDo</h1>
-                <button className="todo__add" onClick={() => setModal(true)}>+ add</button>
+                <button className="todo__add" onClick={() => setModal(true)}>&#x2b;</button>
             </div>
             <div className="todo__container">
                 {tasks && tasks.map((object, index) => <ToDoCard taskObj={object} index={index} deleteTask={deleteTask} updateListArr={updateListArr} />)}
