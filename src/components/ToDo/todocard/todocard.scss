@@ -5,8 +5,8 @@
 .card {
     width: 70%;
     min-height: 13rem;
-    background-color: variables.$White;
-    border: 3px solid variables.$Orange-Accent;
+    background-color: transparent;
+    border: 3px solid variables.$Light-Grey;
     border-radius: 10px;
     padding: 1.5rem 1rem;
     margin: 1rem;
@@ -24,9 +24,9 @@
     }
 
     &__head {
-        border-bottom: 2px solid variables.$Orange-Accent;
+        border-bottom: 2px solid variables.$Light-Grey;
         padding: 0 1rem 0.8rem;
-        color: variables.$Dark-Orange;
+        color: variables.$Main-Blue;
         font-weight: 600;
         font-size: 1.2rem;
     }
@@ -37,7 +37,7 @@
         border-radius: 10px;
         min-height: 5rem;
         font-size: 1rem;
-        color: variables.$Dark-Orange;
+        color: variables.$Main-Blue;
         font-weight: 600;
     }
     
@@ -49,10 +49,10 @@
     &__button {
         cursor: pointer;
         padding: 0.5rem;
-        width: 4rem;
-        background-color: variables.$White;
-        border: 2px solid variables.$Orange-Accent;
-        color: variables.$Orange-Accent;
+        width: 6rem;
+        background-color: transparent;
+        border: 2px solid variables.$Light-Grey;
+        color: variables.$Main-Blue;
         font-weight: 600;
         font-size: 1rem;
         border-radius: 10px;
@@ -66,7 +66,7 @@
         }
 
         &:hover {
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(8, 61, 152, 0.5) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
         }
     }    
 }
