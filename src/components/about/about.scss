@@ -4,14 +4,17 @@
 
 .about {
     margin: 2rem;
-    background-color: rgba($color: variables.$Light-Grey, $alpha: 0.4);
+    background-color: transparent;
+    border: 4px solid variables.$Light-Grey;
     border-radius: 15px;
     max-width: 100%;
-    height: 35rem;
+    height: 37rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
     @include mixins.tablet{ 
         justify-content: space-between;
         flex-direction: row;
@@ -19,8 +22,8 @@
     }
 
     &__clover {
-        color: variables.$Dark-Blue;
-        margin: 1rem auto 0.5rem;
+        color: variables.$Orange-Accent;
+        margin: 1rem auto 1rem;
         text-align: center;
         font-size: 2.5rem;
 
@@ -30,7 +33,7 @@
     }
 
     &__me {
-        color: variables.$Dark-Blue;
+        color: variables.$Light-Grey;
         text-transform: lowercase;
         margin: 0auto 2rem;
         text-align: center;
@@ -47,7 +50,10 @@
         &--title {
             font-size: 2.5rem;
             text-decoration: 3px underline;
-            margin: 0 4rem 1rem;
+            margin: 0 3rem 1rem;
+            border: 3px solid variables.$Light-Grey;
+            border-radius: 20px;
+            padding: 0.5rem;
 
             @include mixins.tablet {
                 margin: 0 6rem 1rem;
@@ -62,7 +68,7 @@
 
         &--subtitle {
             margin: 1.5rem ;
-            color: variables.$Dark-Blue;
+            color: variables.$Orange-Accent;
             font-size: 1.1rem;
             font-weight: 400;
             text-transform: none;
@@ -79,7 +85,7 @@
 
         &--description {
             font-size: 1rem;
-            color: variables.$Dark-Grey;
+            color: variables.$Grey;
             margin: 0 3rem 2rem;
             text-transform: none;
 
@@ -98,8 +104,8 @@
         justify-content: center;
         margin: 0 auto;
         border-radius: 50%;
-        border-right: 3px solid variables.$Dark-Blue;
-        border-top: 5px solid variables.$Dark-Blue;
+        border-right: 3px solid variables.$Light-Grey;
+        border-top: 5px solid variables.$Light-Grey;
 
         @include mixins.tablet {
             margin: auto;
@@ -126,7 +132,7 @@
     }
 
     &__links {
-        border-bottom: 1px solid variables.$Light-Grey;
+        border-bottom: 1px solid variables.$Orange-Accent;
         margin: 0 2rem;
         display: flex;
         justify-content: center;
@@ -152,6 +158,7 @@
         color: variables.$Grey;
         margin-top: 0.3rem;
         font-size: 0.7rem;
+        font-weight: 600;
     }
 
 }

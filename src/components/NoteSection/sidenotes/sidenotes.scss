@@ -7,7 +7,7 @@
 
     &__header {
         display: flex;
-        border-bottom: 1px solid variables.$Main-Blue;
+        border-bottom: 1px solid variables.$Orange-Accent;
 
         @include mixins.tablet {
             border: none;
@@ -17,17 +17,23 @@
     &__add {
         color: variables.$White;
         font-weight: 600;
-        background-color: variables.$Main-Blue;
+        background-color: rgba($color: variables.$Main-Blue, $alpha: 0.7);
         border-radius: 50px;
         width: 30px;
         height: 30px;
-        margin: 1.3rem 0.5rem 0.6rem;
+        margin: 1.3rem 0.7rem 0.6rem 0.5rem;
         flex-shrink: 0;
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid variables.$Orange-Accent;
+            color: variables.$Orange-Accent;
+        }
        
     }
 
     &__notes {
-        border-left: 1px solid variables.$Main-Blue;
+        border-left: 1px solid variables.$Orange-Accent;
         padding-right: 0.5rem;
         margin-top: 0.5rem;
         display: flex;
@@ -46,15 +52,15 @@
     &__note {
         margin-left: 1rem;
         padding:  0.1rem 0.3rem;
-        color: variables.$Dark-Blue;
-        background-color: variables.$Side-Note-Grey;
+        color: variables.$Light-Grey;
+        background-color: transparent;
         border-radius: 5px;
         flex-shrink: 0;
         margin-bottom: 0.5rem;
+        border: 2px solid rgba($color: variables.$Light-Grey, $alpha: 0.6);
 
         @include mixins.tablet {
             min-height: 3rem;
-            border: 1px solid variables.$Main-Blue;
             margin: 0.5rem 1rem;
         }
 

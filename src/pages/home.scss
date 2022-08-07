@@ -7,7 +7,6 @@ button {
 }
 
 .home {
-    background-color:rgba($color: variables.$Main-Blue, $alpha: 0.25);
     opacity: 75%;
     background-position: center;
     background-size: cover;
@@ -15,7 +14,7 @@ button {
     border-radius: 20px;
     padding: 3rem 2rem;
     margin: 1.5rem 1rem 1rem;  
-    border: 3px solid variables.$Dark-Blue;
+    border: 3px solid variables.$Main-Blue;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     min-height: 28rem;
 
@@ -64,12 +63,12 @@ button {
             min-width: 13rem;
             min-height: 40px;
             border-radius: 20px;
-            background-color: variables.$White;
+            background-color: transparent;
             text-align: center;
-            color: variables.$Dark-Blue;
+            color: variables.$Main-Blue;
             font-size: 1rem;
             text-transform: uppercase;
-            border: 3px solid variables.$Dark-Blue;
+            border: 3px solid variables.$Main-Blue;
             font-family:'Courier New', Courier, monospace;
             font-weight: 600;
             box-shadow: rgba(0, 0, 0, 0.55) 1.95px 2.95px 2.6px;
@@ -92,6 +91,7 @@ button {
 
             &:hover {
                 border: 3px solid variables.$Orange-Accent;
+                color: variables.$Orange-Accent;
                 transform: scale(1.1);
                 font-weight: 600;
 
