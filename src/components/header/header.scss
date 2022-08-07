@@ -8,7 +8,7 @@ a {
 
 .header {
     padding: 0 0.8rem 0.5rem;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -78,6 +78,21 @@ a {
         display: flex;
         font-weight: 600;
         
+    }
+
+    &__toggle {
+        border-top: 1px solid variables.$Light-Grey;
+        margin: 0 2rem;
+
+        &--dark {
+            color: variables.$Light-Grey;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: transparent;
+            
+            &:hover {
+                color: variables.$Orange-Accent;
+            }
+        }
     }
 
 

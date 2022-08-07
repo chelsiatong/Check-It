@@ -4,9 +4,9 @@
 
 .todo {
     text-align: center;
-    background-color: rgba(45, 140, 240, 0.1);
+    background-color: transparent;
     padding: 2rem 0;
-    border: 4px solid variables.$Dark_Blue;
+    border: 4px solid variables.$Main-Blue;
     border-radius: 10px;
     min-height: calc(100vh - 20rem);
     margin: 2rem 1rem;    
@@ -16,9 +16,9 @@
     }
 
     &__header {
-        background-color: variables.$White;
+        background-color: transparent;
         padding: 1rem;
-        border: 4px solid variables.$Dark_Blue;
+        border: 4px solid variables.$Main-Blue;
         border-radius: 10px;
         margin: 0 2.5rem 1rem;
         display: flex;
@@ -35,7 +35,7 @@
     }
 
     &__title {
-        color: variables.$Dark_Blue;
+        color: variables.$Main-Blue;
         margin: 1rem;
         font-size: 2rem;
         letter-spacing: 2px;
@@ -46,9 +46,9 @@
         margin: 1rem;
         margin-left: 0;
         border-radius: 10px;
-        border: 2px solid variables.$Dark_Blue;
+        border: 2px solid variables.$Main-Blue;
         background-color: transparent;
-        color: variables.$Dark_Blue;
+        color: variables.$Main-Blue;
         font-weight: 600;
         padding: 0 0.6rem;
         font-size: 1.5rem;

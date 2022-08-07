@@ -8,7 +8,7 @@ input, textarea {
     outline: none;
 
     &::placeholder {
-        color: variables.$Dark-Blue;
+        color: variables.$Orange-Accent;
     }
 
 }
@@ -19,30 +19,33 @@ input, textarea {
     &--edit {
         display: flex;
         flex-direction: column;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
 
         @include mixins.tablet {
             margin-top: 1.5rem;
         }
 
         &__title {
+            background-color: transparent;
             padding: 0.2rem 0.6rem;
             font-weight: 600;
             font-size: 1.2rem;
             border-radius: 15px;
-            color: variables.$Dark-Blue;
-            border: 2px solid variables.$Dark-Blue;
+            color: variables.$Orange-Accent;
+            border: 2px solid variables.$Orange-Accent;
             font-family:'Courier New', Courier, monospace;
 
         }
 
         &__body {
+            background-color: transparent;
             min-height: 18.75rem;
             font-size: 1rem;
             border-radius: 20px;
-            color: variables.$Dark-Blue;
+            color: variables.$Orange-Accent;
             padding: 0.8rem;
-            border: 2px solid variables.$Dark-Blue;
+            border: 2px solid variables.$Orange-Accent;
             margin-top: 1rem;
             font-family:'Courier New', Courier, monospace;
             font-weight: 600;
@@ -50,11 +53,11 @@ input, textarea {
     }
 
     &__preview {
-        background-color: variables.$White;
+        background-color: transparent;
         border-radius: 20px;
         min-height: 12.5rem;
         margin-bottom: 1rem;
-        padding: 1rem;
+        padding: 1rem 0.5rem;
 
         &--title {
             height: 1.875rem;
