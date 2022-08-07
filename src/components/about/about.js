@@ -16,7 +16,7 @@ function About() {
                     <p className="about__me--description">Join me on this journey as I find my new path in life</p>
                 </div>
                 <div className="about__profile" >
-                    <img className="about__profile--picture" src={Picture} alt="profile-picture"></img>
+                    <img className="about__profile--picture" src={Picture} alt="profile-pic"></img>
                 </div>
                 <h1 className="about__clover">&#x2618;</h1>
             </div>

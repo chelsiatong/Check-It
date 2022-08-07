@@ -13,7 +13,7 @@
     &__container {
         @include mixins.tablet {
             display: flex;
-            justify-content: start;
+            flex: start;
         }
     }
 
