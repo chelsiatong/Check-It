@@ -49,7 +49,6 @@
 
         &--title {
             font-size: 2.5rem;
-            text-decoration: 3px underline;
             margin: 0 3rem 1rem;
             border: 3px solid variables.$Light-Grey;
             border-radius: 20px;
@@ -72,6 +71,7 @@
             font-size: 1.1rem;
             font-weight: 400;
             text-transform: none;
+
 
             @include mixins.tablet {
                 font-size: 1.6rem;
