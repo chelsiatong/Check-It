@@ -83,17 +83,13 @@ a {
     &__toggle {
         border-top: 1px solid variables.$Light-Grey;
         margin: 0 2rem;
+        display: flex;
 
-        // &--dark {
-        //     color: variables.$Light-Grey;
-        //     font-family:Verdana, Geneva, Tahoma, sans-serif;
-        //     background-color: transparent;
-            
-        //     &:hover {
-        //         color: variables.$Orange-Accent;
-        //     }
-        // }
-
+        &--logo {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-top: 0.5rem;
+        }
 
         &--input {
             position: absolute;
@@ -101,10 +97,6 @@ a {
             width: 0;
             height: 0;
         }
-
-        // &--onoff {
-        //     color: purple;
-        // }
 
         &--input:checked + &--slide {
             background-color: variables.$Dark-Grey;
@@ -127,22 +119,20 @@ a {
                 content: "";
                 height: 14px;
                 width: 18px;
-                background-color: variables.$Orange-Accent;
-                top: 3px;
-                left: 5px;
+                background-color: variables.$Toggle-Yellow;
+                border: 1px solid variables.$Dark-Mode;
+                top: 2px;
+                left: 3.4px;
                 transition: 0.3s;
                 position: absolute;
                 border-radius: 20px;
             }
-
         }
 
         &--round, &--slide {
             border-radius: 20px;
-            margin-top: 0.5rem;
+            margin: 0.5rem 0.5rem 0;
         }
-
-
     }
 }
 
