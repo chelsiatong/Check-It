@@ -15,12 +15,12 @@ function App() {
     <BrowserRouter>
       <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
         <Header handleDarkMode={setDarkMode} />
-        {/* <Home /> */}
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/notes' component={Notes} />
           <Route path='/todo' component={ToDoList} />
           <Route path='/about' component={About} />
+          <Route component={Home} />
         </Switch>
       </div>
     </BrowserRouter >

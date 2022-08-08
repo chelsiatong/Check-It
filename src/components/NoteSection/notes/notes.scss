@@ -20,6 +20,7 @@
     &__main {
         @include mixins.tablet {
             width: 100%;
+       
         }
     }
 

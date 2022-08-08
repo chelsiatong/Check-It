@@ -19,12 +19,12 @@ code {
 
 .day {
   background-color: variables.$Day-Mode;
-  height: 100vh;
-  margin-top: 1rem;
+  min-height: 100vh;
+  padding-top: 1rem;
 }
 
 .dark-mode {
   background-color: variables.$Dark-Mode;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 1rem;
 }
