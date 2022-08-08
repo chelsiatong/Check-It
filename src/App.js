@@ -22,16 +22,14 @@ function App() {
     //   <Link to="/about" spy={true} smooth={true} offset={50} duration={500} ><About /></Link>
     // </div>
     <BrowserRouter>
-      <div className="day" >
-        <div className={`${darkMode && 'dark-mode'}`}  >
-          <Header handleDarkMode={setDarkMode} />
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/notes' component={Notes} />
-            <Route path='/todo' component={ToDoList} />
-            <Route path='/about' component={About} />
-          </Switch>
-        </div>
+      <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
+        <Header handleDarkMode={setDarkMode} />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/notes' component={Notes} />
+          <Route path='/todo' component={ToDoList} />
+          <Route path='/about' component={About} />
+        </Switch>
       </div>
     </BrowserRouter >
 
