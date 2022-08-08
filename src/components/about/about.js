@@ -11,8 +11,8 @@ function About() {
             <div className="about">
                 <h1 className="about__clover">&#x2618;</h1>
                 <div className="about__me" >
-                    <h1 className="about__me--title" >Hello.</h1>
-                    <h3 className="about__me--subtitle">I'm Chelsia! A Web Developer, and an Analytical Chemist. </h3>
+                    <h1 className="about__me--title" >Hello</h1>
+                    <h3 className="about__me--subtitle">I'm Chelsia! A Web Developer, and an Analytical Chemist </h3>
                     <p className="about__me--description">Join me on this journey as I find my new path in life</p>
                 </div>
                 <div className="about__profile" >
