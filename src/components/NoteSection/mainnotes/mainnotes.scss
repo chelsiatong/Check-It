@@ -10,13 +10,12 @@ input, textarea {
     &::placeholder {
         color: variables.$Orange-Accent;
     }
-
 }
 
 .main-notes {
     margin: 0 1rem;
 
-    &--edit {
+    &__edit {
         display: flex;
         flex-direction: column;
         padding: 0.5rem 0;
@@ -24,9 +23,12 @@ input, textarea {
 
         @include mixins.tablet {
             margin-top: 1.5rem;
+            width: 100%;
+            padding-right: 1rem;
+
         }
 
-        &__title {
+        &--title {
             background-color: transparent;
             padding: 0.2rem 0.6rem;
             font-weight: 600;
@@ -35,10 +37,9 @@ input, textarea {
             color: variables.$Orange-Accent;
             border: 2px solid variables.$Orange-Accent;
             font-family:'Courier New', Courier, monospace;
-
         }
 
-        &__body {
+        &--body {
             background-color: transparent;
             min-height: 18.75rem;
             font-size: 1rem;
@@ -49,6 +50,10 @@ input, textarea {
             margin-top: 1rem;
             font-family:'Courier New', Courier, monospace;
             font-weight: 600;
+            // word-wrap: break-word;
+            // word-break: break-word;
+            // white-space: pre-wrap;
+            
         }
     }
 
@@ -58,6 +63,7 @@ input, textarea {
         min-height: 12.5rem;
         margin-bottom: 1rem;
         padding: 1rem 0.5rem;
+
 
         &--title {
             height: 1.875rem;
@@ -79,9 +85,16 @@ input, textarea {
             margin-top: 1rem;
             border: 2px solid variables.$Light-Grey;
             min-height: 18.75rem;
+            word-wrap: break-word;
 
+            & > p {
+                word-wrap: break-word;
+                word-break: break-word;
+            }
+ 
             @include mixins.tablet{
                 margin-top: 0.8rem;
+                
             }
         }
     }
@@ -105,5 +118,5 @@ input, textarea {
     @include mixins.desktop {
         min-height: 44.5rem;
     }
-
 }
+
