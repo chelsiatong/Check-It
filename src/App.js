@@ -6,21 +6,12 @@ import Notes from './components/NoteSection/notes/notes';
 import ToDoList from './components/ToDo/todolist/todolist';
 import About from './components/about/about';
 import { useState } from 'react';
-// import { Link } from 'react-scroll';
-
 
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    // <div>
-    //   <Header />
-    //   <Link to="/" spy={true} smooth={true} offset={50} duration={500} ><Home /></Link>
-    //   <Link to="/notes" spy={true} smooth={true} offset={50} duration={500} ><Notes /></Link>
-    //   <Link to="/todo" spy={true} smooth={true} offset={50} duration={500} ><ToDoList/></Link>
-    //   <Link to="/about" spy={true} smooth={true} offset={50} duration={500} ><About /></Link>
-    // </div>
     <BrowserRouter>
       <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
         <Header handleDarkMode={setDarkMode} />
