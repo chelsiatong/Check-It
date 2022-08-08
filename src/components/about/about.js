@@ -4,7 +4,6 @@ import Picture from '../../assets/images/portfolio-pic.png';
 import LinkedIn from '../../assets/logo/linkedin.png';
 import GitHub from '../../assets/logo/github.png';
 
-
 function About() {
     return (
         <section>
