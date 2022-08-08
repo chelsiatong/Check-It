@@ -15,6 +15,7 @@ function App() {
     <BrowserRouter>
       <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
         <Header handleDarkMode={setDarkMode} />
+        {/* <Home /> */}
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/notes' component={Notes} />
