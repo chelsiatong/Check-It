@@ -4,7 +4,7 @@ import MainLogo from '../assets/logo/main-logo.png';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-export const API_URL = 'https://api.unsplash.com/search/photos?orientation=landscape&color=white&query=rock&client_id=kqtyznMCRXQzQtY-fkSugNKhER2HYZKdb7gZunsdV8U'
+export const API_URL = 'https://api.unsplash.com/search/photos?orientation=landscape&color=black_and_white&query=mountain&client_id=kqtyznMCRXQzQtY-fkSugNKhER2HYZKdb7gZunsdV8U'
 
 function Home() {
     const [images, setImages] = useState("");

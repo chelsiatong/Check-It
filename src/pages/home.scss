@@ -38,6 +38,10 @@ button {
         border-top: 6px solid variables.$White;
         border-left: 6px solid variables.$White;
 
+        &:hover {
+            transform: scale(1.05);
+        }
+
         @include mixins.tablet {
             min-width: 48%;
             margin-bottom: 3.5rem;
@@ -63,7 +67,7 @@ button {
             min-width: 13rem;
             min-height: 40px;
             border-radius: 20px;
-            background-color: transparent;
+            background-color: white;
             text-align: center;
             color: variables.$Main-Blue;
             font-size: 1rem;
@@ -119,5 +123,6 @@ button {
         @include mixins.tablet {
             margin-bottom: 2rem;
         }
+
     }
 }
