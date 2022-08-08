@@ -53,6 +53,7 @@
             border: 3px solid variables.$Light-Grey;
             border-radius: 20px;
             padding: 0.5rem;
+            text-shadow: 1.5px 2px 2px variables.$Grey;
 
             @include mixins.tablet {
                 margin: 0 6rem 1rem;

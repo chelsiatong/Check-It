@@ -22,7 +22,7 @@ function App() {
     //   <Link to="/about" spy={true} smooth={true} offset={50} duration={500} ><About /></Link>
     // </div>
     <BrowserRouter>
-      <div className={`${darkMode && 'dark-mode'}`} >
+      <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
         <Header handleDarkMode={setDarkMode} />
         <Switch>
           <Route path='/' exact component={Home} />
@@ -30,9 +30,8 @@ function App() {
           <Route path='/todo' component={ToDoList} />
           <Route path='/about' component={About} />
         </Switch>
-
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
 
   );
 }

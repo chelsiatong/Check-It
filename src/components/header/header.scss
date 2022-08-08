@@ -13,13 +13,13 @@ a {
     justify-content: space-between;
     border-radius: 15px;
     border: 2px solid variables.$Main-Blue;
-    margin: 1rem 1rem;
+    margin: 0rem 1rem 0.8rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
     
     @include mixins.tablet {
         padding: 0 1.5rem 0.5rem;
-        margin: 1rem 2rem;
+        margin: 0rem 2rem 0.8rem;
     }
 
     @include mixins.desktop {
@@ -69,9 +69,7 @@ a {
             border-radius: 1rem;
             padding: 0.5rem;
             color: variables.$Orange-Accent;
-
         }
-
     }
     
     &__nav {
@@ -82,20 +80,61 @@ a {
 
     &__toggle {
         border-top: 1px solid variables.$Light-Grey;
-        margin: 0 2rem;
+        margin: 0 1rem;
+        display: flex;
 
-        &--dark {
-            color: variables.$Light-Grey;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            background-color: transparent;
-            
-            &:hover {
-                color: variables.$Orange-Accent;
+        @include mixins.tablet {
+            margin: 0 2rem;
+        }
+
+        &--logo {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-top: 0.5rem;
+
+        }
+
+        &--input {
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+
+        &--input:checked + &--slide {
+            background-color: variables.$Dark-Grey;
+        }
+
+        &--input:checked + &--slide:before {
+            transform: translateX(13px);
+        }
+
+        &--slide {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            background-color: variables.$Light-Grey;
+            transition: 0.3s;
+            width: 40px;
+            height: 20px;
+
+            &:before {
+                content: "";
+                height: 14px;
+                width: 18px;
+                background-color: variables.$Toggle-Yellow;
+                border: 1px solid variables.$Dark-Mode;
+                top: 2px;
+                left: 3.4px;
+                transition: 0.3s;
+                position: absolute;
+                border-radius: 20px;
             }
         }
+
+        &--round, &--slide {
+            border-radius: 20px;
+            margin: 0.5rem 0.5rem 0;
+        }
     }
-
-
-
-
 }
+

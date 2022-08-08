@@ -11,7 +11,7 @@ function SideNotes({ notes, onAddNote, onDeleteNote, activeNote, setActiveNote }
                 <button className="side-notes__add" onClick={onAddNote} >+</button>
                 <div className="side-notes__notes" >
 
-                    {notes.map((note) => (
+                    {sortedNotes.map((note) => (
                         <div className={`side-notes__note ${note.id === activeNote && "side-notes__note--active"}`} onClick={() => setActiveNote(note.id)} >
                             <div className="side-notes__title">
                                 <h4 className="side-notes__label" placeholder="test" >{note.title && note.title.substr(0, 10) + "..."}</h4>
