@@ -119,11 +119,11 @@ a {
 
             &:before {
                 content: "";
-                height: 14px;
+                height: 14.5px;
                 width: 18px;
                 background-color: variables.$Toggle-Yellow;
                 border: 1px solid variables.$Dark-Mode;
-                top: 2px;
+                top: 1.7px;
                 left: 3.4px;
                 transition: 0.3s;
                 position: absolute;
