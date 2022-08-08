@@ -16,6 +16,12 @@ code {
     monospace;
 }
 
+.day {
+  background-color: variables.$Day-Mode;
+  height: 100vh;
+  padding-top: 0.02rem;
+}
+
 .dark-mode {
   background-color: variables.$Dark-Mode;
   padding-top: 0.1rem;

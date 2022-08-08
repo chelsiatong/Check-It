@@ -20,8 +20,15 @@ function Header({ handleDarkMode }) {
                         className="header__logo--link" activeClassName="header__logo--active" >About</NavLink>
                 </div>
             </header>
-            <div className="header__toggle" >
+            {/* <div className="header__toggle" >
                 <button className="header__toggle--dark" onClick={() => handleDarkMode((previousDarkMode) => !previousDarkMode)} >dark-mode</button>
+            </div> */}
+            <div className="header__toggle" >
+                <label className="header__toggle--switch"  >
+                    {/* <span className="header__toggle--onoff" >Day</span> */}
+                    <input className="header__toggle--input" type="checkbox" onClick={() => handleDarkMode((previousDarkMode) => !previousDarkMode)} />
+                    <span className="header__toggle--slide header__toggle--round"></span>
+                </label>
             </div>
         </section>
 
