@@ -1,8 +1,7 @@
 import './home.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import Cat from '../assets/logo/cat.jpeg';
 import { Link } from 'react-router-dom';
-
 
 function Home() {
     return (
@@ -15,8 +14,6 @@ function Home() {
                     <button className="home__menu--option">Calendar</button></Link>
             </div>
         </section>
-
-
     );
 }
 
