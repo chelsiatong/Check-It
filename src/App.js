@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { MemoryRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/header/header';
 import Home from './pages/home';
 import Notes from './components/NoteSection/notes/notes';
@@ -11,7 +11,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <BrowserRouter>
+    <MemoryRouter>
       <div className={`${darkMode ? 'dark-mode' : 'day'}`}  >
         <Header handleDarkMode={setDarkMode} />
         <Switch>
@@ -22,7 +22,7 @@ function App() {
           <Route component={Home} />
         </Switch>
       </div>
-    </BrowserRouter >
+    </MemoryRouter >
   );
 }
 
