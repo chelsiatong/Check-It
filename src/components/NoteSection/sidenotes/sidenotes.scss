@@ -29,7 +29,6 @@
             border: 2px solid variables.$Orange-Accent;
             color: variables.$Orange-Accent;
         }
-       
     }
 
     &__notes {
@@ -44,8 +43,7 @@
             max-height: 45rem;
             padding-right: 0;
             border: none;
-            width: 15.625rem;
-            
+            width: 15.625rem;          
         }
     }
 
@@ -67,14 +65,12 @@
         &--active {
             color: variables.$Dark-Orange;
             border: 2px solid variables.$Orange-Accent;
-        }
-        
+        }     
     }
 
     &__title {
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between; 
     }
 
     &__label {

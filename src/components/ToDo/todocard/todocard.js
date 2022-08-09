@@ -29,7 +29,7 @@ function ToDoCard({ taskObj, index, deleteTask, updateListArr }) {
             </div>
             {modal && <EditTask toggle={toggle} updateTask={updateTask} taskObj={taskObj} />}
         </>
-    )
+    );
 }
 
 export default ToDoCard;
