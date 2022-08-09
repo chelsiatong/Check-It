@@ -12,13 +12,13 @@ function Home() {
     const fetchAPI = () => {
         axios.get(`${API_URL}`)
             .then((response) => {
-                console.log(response.data.results);
+                // console.log(response.data.results);
                 const randomIndex = Math.floor(Math.random() * response.data.results.length);
                 const data = response.data.results[randomIndex].urls.full;
                 setImages(data);
             })
             .catch((error) => {
-                console.log('Failed', error);
+                console.log('Failed, please try again', error);
             });
     }
     return (
