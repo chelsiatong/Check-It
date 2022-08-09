@@ -15,7 +15,6 @@ a {
     border: 2px solid variables.$Main-Blue;
     margin: 0rem 1rem 0.8rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
     
     @include mixins.tablet {
         padding: 0 1.5rem 0.5rem;
@@ -25,7 +24,6 @@ a {
     @include mixins.desktop {
         padding: 0 2.5rem 0.5rem;
     }
-
 
     &__logo {
         margin-top: 0.8rem;
@@ -60,7 +58,6 @@ a {
                 background-color: variables.$Main-Blue;
                 color: variables.$White;
                 padding: 0.5rem;
-                
             }
         }
         
@@ -75,7 +72,6 @@ a {
     &__nav {
         display: flex;
         font-weight: 600;
-        
     }
 
     &__toggle {
@@ -91,7 +87,6 @@ a {
             width: 1.2rem;
             height: 1.2rem;
             margin-top: 0.5rem;
-
         }
 
         &--input {

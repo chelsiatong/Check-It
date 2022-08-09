@@ -62,8 +62,7 @@
 
             @include mixins.desktop {
                 font-size: 4rem;
-            }
-            
+            } 
         }
 
         &--subtitle {
@@ -72,7 +71,6 @@
             font-size: 1.1rem;
             font-weight: 400;
             text-transform: none;
-
 
             @include mixins.tablet {
                 font-size: 1.6rem;
@@ -97,7 +95,6 @@
             @include mixins.desktop {
                 margin-top: 0.8rem;
             }
-
         }
     }
 

@@ -29,7 +29,6 @@ button {
         min-height: 50rem;
     }
     
-
     &__logo {
         max-width: 55%;
         border-radius: 50%;
@@ -123,6 +122,5 @@ button {
         @include mixins.tablet {
             margin-bottom: 2rem;
         }
-
     }
 }
