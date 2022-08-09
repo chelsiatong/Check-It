@@ -25,9 +25,6 @@ Check-It is a minimal organization application and chrome extension that allows 
 ![image](https://user-images.githubusercontent.com/106282364/183751664-6aa0aa91-bd48-4e4a-9681-6c4ea9de0667.png)
 ![image](https://user-images.githubusercontent.com/106282364/183752059-8b725189-9173-45ec-8151-2ad27a76adc3.png)
 
-
-
-
 ## Tech Stack
 
 #### HTML, SASS, REACT JS, AXIOS, REACT-ROUTER-DOM, CHROME EXTENSION
