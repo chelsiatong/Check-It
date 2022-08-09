@@ -20,6 +20,7 @@ function ToDoList() {
         temporary.splice(index, 1);
         localStorage.setItem("tasks", JSON.stringify(temporary));
         setTasks(temporary);
+        // chrome.runtime.reload();
         window.location.reload();
     }
 
@@ -28,6 +29,7 @@ function ToDoList() {
         temporary[index] = object;
         localStorage.setItem("tasks", JSON.stringify(temporary));
         setTasks(temporary);
+        // chrome.runtime.reload();
         window.location.reload();
     }
 
@@ -42,7 +44,6 @@ function ToDoList() {
         setTasks(tasks);
         setModal(false);
     }
-
     return (
         <section className="todo">
             <div className="todo__header" >

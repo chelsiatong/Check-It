@@ -7,5 +7,10 @@
   "chrome_url_overrides": {
     "newtab": "chrome-extension://nmebcfkifpapbhmaaficapbbifmjdipi/index.html",
     "default_title": "CHECK-IT"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }
