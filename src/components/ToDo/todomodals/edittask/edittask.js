@@ -26,7 +26,7 @@ function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
     useEffect(() => {
         setTaskName(taskObj.Name);
         setDescription(taskObj.Description);
-    }, []);
+    }, [taskObj]);
 
     return (
         <section className="modal">
