@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ToDoCard from '../todocard/todocard';
 import CreateTaskModal from '../todomodals/createtask/createtask';
 
+
 function ToDoList() {
     const [modal, setModal] = useState(false);
     const [tasks, setTasks] = useState([]);
@@ -20,6 +21,7 @@ function ToDoList() {
         temporary.splice(index, 1);
         localStorage.setItem("tasks", JSON.stringify(temporary));
         setTasks(temporary);
+        // chrome.runtime.reload();
         window.location.reload();
     }
 
@@ -28,6 +30,7 @@ function ToDoList() {
         temporary[index] = object;
         localStorage.setItem("tasks", JSON.stringify(temporary));
         setTasks(temporary);
+        // chrome.runtime.reload();
         window.location.reload();
     }
 
