@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import ToDoCard from '../todocard/todocard';
 import CreateTaskModal from '../todomodals/createtask/createtask';
 
-
 function ToDoList() {
     const [modal, setModal] = useState(false);
     const [tasks, setTasks] = useState([]);
@@ -45,7 +44,6 @@ function ToDoList() {
         setTasks(tasks);
         setModal(false);
     }
-
     return (
         <section className="todo">
             <div className="todo__header" >
