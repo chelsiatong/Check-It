@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# CHECK-IT ✔️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by Chelsia Tong, with a goal in mind to create a productivity tool in hopes that it could help others improve their lifestyle habits.
 
-## Available Scripts
+## Pitch
+
+Check-It is a minimal organization application and chrome extension that allows users to easily track their day-to-day responsibilities with a to-do list function, as well as a place to quickly jot down their thoughts with the notes function. All you have to do is open up the application/ new tab, and watch your productivity grow.
+
+## Features
+
+✔️ Notes and a To-Do List Function for productivity
+
+✔️ Responsive design for easy access on all devices
+
+✔️ Local storage ➢ Allows stored data with no expiration point
+
+✔️ CRUD operations
+
+✔️ Unplash API Customization
+
+✔️ Light and Dark Mode 
+
+## Sample Images
+
+![image](https://user-images.githubusercontent.com/106282364/183751664-6aa0aa91-bd48-4e4a-9681-6c4ea9de0667.png)
+![image](https://user-images.githubusercontent.com/106282364/183752059-8b725189-9173-45ec-8151-2ad27a76adc3.png)
+
+
+
+
+## Tech Stack
+
+#### HTML, SASS, REACT JS, AXIOS, REACT-ROUTER-DOM, CHROME EXTENSION
+
+## Web Application
 
 In the project directory, you can run:
 
-### `npm start`
+#### `git clone` https://github.com/chelsiatong/Check-It.git
+#### `npm install`
+#### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✨ now watch your productivity grow ✨
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Chrome Extension (loading for the public)
 
-### `npm test`
+#### `open chrome/ brave`
+#### `search check-it on` https://chrome.google.com/webstore/category/extensions
+#### `add to chrome/ brave`
+#### `open a new tab`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✨ now watch your productivity grow ✨
 
-### `npm run build`
+## Future Directions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔜  Calendar function, expanding on productivity
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔜  Notes customization ➢ fonts, colors, etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔜  Login/ Register function for further access on various devices
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact me 😃
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Chelsia Tong ☘️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  `LinkedIn:` https://www.linkedin.com/in/chelsia-tong
+  
+  `Git-Hub:` https://github.com/chelsiatong
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
