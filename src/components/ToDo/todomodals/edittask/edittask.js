@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../createtask/createtask.scss';
+// import { useHistory } from 'react-router-dom';
+
 
 function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
     const [taskName, setTaskName] = useState('');
@@ -22,6 +24,16 @@ function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
         tempObj["Description"] = description;
         updateTask(tempObj);
     }
+
+    // let history = useHistory();
+    // function handleClick() {
+    //     history.push('http://localhost:3000/todo');
+    // }
+
+    // const handleDouble = () => {
+    //     handleUpdate();
+    //     handleClick();
+    // }
 
     useEffect(() => {
         setTaskName(taskObj.Name);
@@ -46,7 +58,8 @@ function EditTaskModal({ modal, toggle, updateTask, taskObj }) {
                 </div>
                 <div className="modal__buttons">
                     <button className="modal__buttons--click" onClick={toggle} >cancel</button>
-                    <button className="modal__buttons--click" onClick={handleUpdate} >update</button>
+                    {/* <button className="modal__buttons--click" onClick={() => { handleUpdate(); handleClick(); }}  >update</button> */}
+                    <button className="modal__buttons--click" onClick={handleUpdate}  >update</button>
                 </div>
             </div>
         </section>
