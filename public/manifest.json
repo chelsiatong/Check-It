@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "short_name": "CHECK-IT",
   "name": "CHECK-IT",
   "description": "New tab chrome extension to enhance day-to-day productivity",
@@ -8,17 +8,9 @@
     "newtab": "chrome-extension://nmebcfkifpapbhmaaficapbbifmjdipi/index.html",
     "default_title": "CHECK-IT"
   },
-  "permissions": [
-    "storage",
-    "unlimitedStorage",
-    "management"
-  ],
-  "background": {
-    "scripts": [
-      "src/components/ToDo/todolist.js"
-    ]
-  },
-  "env": {
-    "webextensions": true
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }
