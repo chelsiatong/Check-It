@@ -54,8 +54,6 @@ function Notes() {
 
         </section>
     );
-
-
 }
 
 export default Notes;

@@ -1,7 +1,6 @@
 import './mainnotes.scss';
 import ReactMarkdown from "react-markdown";
 
-
 function MainNotes({ activeNote, onUpdateNote }) {
     const onEditField = (key, value) => {
         onUpdateNote({
@@ -23,11 +22,8 @@ function MainNotes({ activeNote, onUpdateNote }) {
                 <h3 className="main-notes__preview--title" >{activeNote.title}</h3>
                 <ReactMarkdown className="main-notes__preview--body" >{activeNote.body}</ReactMarkdown>
             </div>
-
         </section>
-
     )
-
 }
 
 export default MainNotes;

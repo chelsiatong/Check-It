@@ -31,7 +31,6 @@
         @include mixins.desktop {
             margin: 0 2rem 1rem;
         }
- 
     }
 
     &__title {
@@ -39,7 +38,6 @@
         margin: 1rem;
         font-size: 2rem;
         letter-spacing: 2px;
-
     }
 
     &__add {
@@ -57,14 +55,11 @@
             color: variables.$Orange-Accent;
             border-color: variables.$Orange-Accent;
         }
-
     }
 
     &__container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     }
-
 }

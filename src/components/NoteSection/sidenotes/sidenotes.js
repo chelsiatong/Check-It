@@ -1,16 +1,12 @@
 import './sidenotes.scss';
 
-
 function SideNotes({ notes, onAddNote, onDeleteNote, activeNote, setActiveNote }) {
-
     const sortedNotes = notes.sort((a, b) => b.time - a.time)
-
     return (
         <section className="side-notes">
             <div className="side-notes__header">
                 <button className="side-notes__add" onClick={onAddNote} >+</button>
                 <div className="side-notes__notes" >
-
                     {sortedNotes.map((note) => (
                         <div className={`side-notes__note ${note.id === activeNote && "side-notes__note--active"}`} onClick={() => setActiveNote(note.id)} >
                             <div className="side-notes__title">
@@ -21,14 +17,10 @@ function SideNotes({ notes, onAddNote, onDeleteNote, activeNote, setActiveNote }
                             <p className="side-notes__time">{new Date(note.time).toLocaleDateString("en-US", { hour: "2-digit", minute: "2-digit" })}</p>
                         </div>
                     ))}
-
                 </div>
             </div>
-
         </section>
-
-    )
-
+    );
 }
 
 export default SideNotes;

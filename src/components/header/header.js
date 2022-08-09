@@ -5,9 +5,7 @@ import NavLogo from '../../assets/logo/nav-logo.png';
 import Day from '../../assets/logo/sun.png';
 import Night from '../../assets/logo/moon.png';
 
-
 function Header({ handleDarkMode }) {
-
     return (
         <section>
             <header className="header">
@@ -31,8 +29,7 @@ function Header({ handleDarkMode }) {
                 <img className="header__toggle--logo" src={Night} alt="moon-logo" />
             </div>
         </section>
-
-    )
+    );
 }
 
 export default Header;
