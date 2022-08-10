@@ -39,7 +39,7 @@ In the project directory, you can run:
 
 ### ✨ now watch your productivity grow ✨
 
-## Chrome Extension (loading for the public)
+## Chrome Extension (perfecting for the public)
 
 #### `open chrome/ brave`
 #### `search check-it on` https://chrome.google.com/webstore/category/extensions
