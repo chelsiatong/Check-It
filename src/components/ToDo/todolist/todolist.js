@@ -2,8 +2,6 @@ import './todolist.scss';
 import React, { useState, useEffect } from 'react';
 import ToDoCard from '../todocard/todocard';
 import CreateTaskModal from '../todomodals/createtask/createtask';
-// import { useHistory } from 'react-router-dom';
-
 
 function ToDoList() {
     const [modal, setModal] = useState(false);
@@ -24,16 +22,6 @@ function ToDoList() {
         setTasks(temporary);
         window.location.reload();
     }
-
-    // let history = useHistory();
-    // function handleClick() {
-    //     history.push('http://localhost:3000/todo');
-    // }
-
-    // const handleDouble = () => {
-    //     deleteTask();
-    //     handleClick();
-    // }
 
     const updateListArr = (object, index) => {
         let temporary = tasks;
