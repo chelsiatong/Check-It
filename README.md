@@ -29,6 +29,10 @@ Check-It is a minimal organization application and chrome extension that allows 
 
 #### HTML, SASS, REACT JS, AXIOS, REACT-ROUTER-DOM, CHROME EXTENSION
 
+## Deployed
+
+https://check-it-app-ext.netlify.app/
+
 ## Web Application
 
 In the project directory, you can run:
